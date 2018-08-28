@@ -1,6 +1,6 @@
 {
-  "name": "Wisdom Pet App",
-  "short_name": "PetApp",
+  "name": "NTU Library App",
+  "short_name": "NTULib",
   "icons": [
     {
       "src": "images/icons/icon-128x128.png",
@@ -30,6 +30,6 @@
   ],
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#1B7998",
-  "theme_color": "#1B7998"
+  "background_color": "#aa1409",
+  "theme_color": "#f44336"
 }
