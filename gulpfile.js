@@ -52,7 +52,7 @@ gulp.task('webserver', ['generate-service-worker','html', 'css', 'js'], function
   gulp.src(dest)
   .pipe(webserver({
       host: '0.0.0.0',
-      port: 443,
+      port: 8000,
       livereload: true,
       open: true
   }));
