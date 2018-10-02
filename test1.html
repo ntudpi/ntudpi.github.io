@@ -1,0 +1,22 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<!-- <a-marker-camera preset='custom' type='pattern' url='/pattern/'></a-marker-camera> -->
+		<!-- <a-obj-model src="return-files/" scale="0.01 0.01 0.01" position="-1 0 -1" rotation="180 0 0"></a-obj-model> -->
+		
+		<a-marker-camera type='pattern' url='https://ntudpi.github.io/printed.patt'></a-marker-camera>
+		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+		<a-assets>
+		  <a-asset id="cesium-man" src="https://ntudpi.github.io/scene\ (1).glb"></a-asset>
+		</a-assets>
+		<a-entity id="walker" gltf-model="#cesium-man" position="0 0 0" scale="0.5 0.5 0.5" animation-mixer>
+		</a-entity>
+<!-- 		<a-image src="https://ntudpi.github.io/oldPic.jpg" rotation="90 0 180" scale="9.6 4 0" position="0 0 0"></a-image> -->
+		
+	</a-scene>
+	
+
+</body>
